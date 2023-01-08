@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: orange;
-    --secondary-color: lightgreen;
+    --primary-color: #000;
+    --secondary-color: #fff;
 }
 
 html {
@@ -14,8 +14,8 @@ html {
 }
 
 html.dark {
-    --primary-color: lightblue;
-    --secondary-color: lightpink;
+    --primary-color: #fff;
+    --secondary-color: #333;
 }
 
 html.dark {
@@ -58,7 +58,7 @@ body {
     height: 200px;
 }
 .needle{
-    background-color: black;
+    background-color: var(--primary-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -91,7 +91,7 @@ body {
 }
 .center-point::after{
     content: '';
-    background-color:black;
+    background-color:var(--primary-color);
     width: 5px;
     height: 5px;
     position: absolute;
@@ -105,7 +105,7 @@ body {
 
 }
 .date{
-    color: darkslategray;
+    color: #aaa;
     font-size: 14px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -113,7 +113,7 @@ body {
 .date .circle{
     background-color: var(--primary-color);
     border-radius: 50%;
-    color: black;
+    color: var(--secondary-color);
     height: 18px;
     width: 18px;
     display: inline-flex;
